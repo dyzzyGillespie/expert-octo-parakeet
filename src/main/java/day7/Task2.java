@@ -41,6 +41,9 @@ class Player {
     }
 
     public void run() {
+        if (this.stamina==0){
+            return;
+        }
         if (this.stamina > MIN_STAMINA) {
             stamina--;
         } else {
